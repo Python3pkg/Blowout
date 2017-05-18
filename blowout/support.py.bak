@@ -92,7 +92,7 @@ def _write_data(group, name, data):
 
 def _read_dict(group, name):
     ret_group = group[name]
-    names = list(ret_group.keys())
+    names = ret_group.keys()
     valid_names = list()
     underscore = _re.compile('_')
 

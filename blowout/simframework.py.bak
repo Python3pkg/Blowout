@@ -48,7 +48,7 @@ class SimFrame(object):
                 # Get ion shape
                 # ======================================
                 self.PlasmaIons.add_ion_ellipse(PlasmaE.x_coords[i], PlasmaE.y_coords[i])
-                for j, (x, y, bx, by) in enumerate(list(zip(PlasmaE.x_coords[i, :], PlasmaE.y_coords[i, :], PlasmaE.bx_coords[i, :], PlasmaE.by_coords[i, :]))):
+                for j, (x, y, bx, by) in enumerate(zip(PlasmaE.x_coords[i, :], PlasmaE.y_coords[i, :], PlasmaE.bx_coords[i, :], PlasmaE.by_coords[i, :])):
                     # ======================================
                     # Get drive fields at particles
                     # ======================================
